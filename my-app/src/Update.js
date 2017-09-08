@@ -11,7 +11,7 @@ const getDefaultFormValues = () => ({
 
 class Update extends Component {
 constructor(props){
-super(props);
+super();
 this.state = {
   form: getDefaultFormValues(),
   submissions:[],
@@ -38,18 +38,18 @@ handleSubmit(event){
   render() {
     const form = this.state.form;
     return (
-    <div>
+    <div className="App">
       <div className="App-header" />
       <form onChange ={this.handleFormChange} onSubmit={this.handleSubmit}>
       <div className="inputs">
         <h1>Gary Sheffield Should Be In The Hall of Fame Petition</h1>
-        First Name: <input type="text" placeholder="First Name" value={form.firstName}  />
+        First Name: <input type="text" name="firstName" value={form.firstName}  />
         <br></br>
-        Last Name: <input type="text" placeholder="Last Name" value={form.lastName} />
+        Last Name: <input type="text" name="lastName" value={form.lastName} />
         <br></br>
-        City: <input type="text" placeholder="City" ref="city" value={form.city} />
+        City: <input type="text" name="city" value={form.city} />
         <br></br>
-        State: <input type="text" placeholder="State" ref="state" value={form.state} />
+        State: <input type="text" name="state" value={form.state} />
         <br></br>
         <input type="submit" value="Submit" />
       </div>
