@@ -54,13 +54,13 @@ handleSubmit(event){
         <input type="submit" value="Submit" />
       </div>
       </form>
-      <ul>
+      <ol>
 {this.state.submissions.map((x,index) => (
   <li key={index}>
-    {x.firstName} - {x.lastName} - {x.city} - {x.state}
+    {x.firstName}  {x.lastName} - {x.city} , {x.state}
   </li>
 ))}
-      </ul>
+      </ol>
     </div>
 
     );

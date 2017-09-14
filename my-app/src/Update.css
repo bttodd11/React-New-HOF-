@@ -1,26 +1,32 @@
 body{
   height: 100%;
   width: 100%;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 25px;
 }
 
 h1{
-  font-family: 'Marcellus SC', serif;
-  font-size: 30px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 33px;
   text-align: center;
+  color: white;
 }
 input{
   margin: 2%;
 }
 
 .inputs{
-  border: 2px black solid;
+  border: 9px white solid;
   border-radius: 25px;
-  width: 400px;
-  height: 400px;
+  width: 450px;
+  height: 450px;
   text-align: center;
-  padding-top: 9%;
+  padding-top: 4%;
   margin-left: 30%;
   margin-top: 7%;
-  font-family: 'Marcellus SC', serif;
-  font-size: 15px;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 20px;
+  background-color: #00004E;
+  color: white;
+
 }
